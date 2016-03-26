@@ -1,0 +1,272 @@
+.header {
+	background: black;
+	border-bottom: solid yellow 5px;
+}
+
+.header h1 {
+	color: yellow;
+	float: left;
+	font-family: Georgia;
+	font-size: 36px;
+}
+
+nav {
+	display: inline-block;
+}
+
+nav ul {
+	    margin: 26px -13px 0px 87px;
+}
+
+nav ul li {
+	float: left;
+	margin-right: 15px;
+}
+
+button {
+	float: right;
+	display: inline-block;
+}
+
+nav.navbar .collapse ul.nav li a {
+	float: right;
+	padding-left: 5px;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+
+.navbar-inverse {
+    background-color: black;
+    border: none;
+    display: inline-block;
+    width: 10px;
+    margin-top: 16px;
+    margin-bottom: -2px;
+}
+
+.navbar-inverse .navbar-toggle {
+	border: none;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: yellow;
+}
+
+nav ul li a:link {
+	float: right;
+	padding-left: 5px;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+
+a:visited {
+	float: right;
+	padding-left: 5px;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+
+a:hover {
+	float: right;
+	padding-left: 5px;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+
+a:active {
+	float: right;
+	padding-left: 5px;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;	
+}
+
+.brains {
+	background-color: #d3d3d3;
+	font-style: italic;
+	text-align: center;
+	font-weight: bold;
+	font-family: Georgia;
+	height: 40px;
+}
+
+.brains p {
+	line-height: 40px;
+}
+
+#cross {
+	text-decoration: line-through;
+	color: gray;
+}
+
+#under {
+	border-bottom: 1px solid yellow;
+}
+
+.main {
+	background-image: url(../images/coworking.jpg);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+
+.meet {
+	background-color: #d3d3d4; 
+	float: right;
+	opacity: .8;
+	margin: 10% auto;
+	width: 40%;
+	font-size: 15px;
+	font-family: Arial;
+}
+
+.meet h2 {
+	font-size: 15px;
+	font-style: bold;
+}
+
+.button {
+    margin: 0 5px 10px;
+    background-color: yellow;
+    padding: 5px;
+    width: 90%;
+    height: 30px;
+    opacity: 1.0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.find {
+	margin: 10px auto;
+}
+
+.find h2 {
+	font-family: Georgia;
+	font-size: 20px;
+	font-style: bold;
+}
+
+.create {
+	border-right: solid 1px gray;
+}
+
+.finddes {
+	border-left: solid 1px gray;
+}
+
+.sign {
+	background-color:  #d3d3d3;
+	font-weight: bold;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+	width: 60%;
+	border-radius: 5px;
+	margin: 0 20%;
+}
+
+.footer {
+	background-color: black;
+	height: 10%;
+	color: white;
+	vertical-align: bottom;
+	margin-top: 20px;
+}
+@media only screen and (max-width: 1200px) {
+
+	.find {
+		text-align: center;
+	}
+
+	.create, .finddev {
+		border-right: none;
+		/*border-bottom: solid 1px gray;*/
+		margin-bottom: 5px;
+		padding-bottom: 20px;
+	} 
+
+	.finddes {
+		border: none;
+		margin-bottom: 20px;
+	}
+
+}
+
+@media only screen and (max-width: 991px) {
+	.navbar-nav {
+		margin-left: 30px;
+	}
+
+
+	nav.navbar .collapse ul.nav li a {
+    float: right;
+    padding-left: 0px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: -22px;
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 768px) {
+  .header h1 {
+  	margin-right: 98px;
+  }
+  .navbar-inverse .navbar-toggle {
+	margin-left: 98px;
+    margin-right: 14px;
+	}
+
+	/*nav.navbar .collapse ul.nav li a {
+		display: inline-block;
+	}*/
+
+	.container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse {
+		width: 443px;
+		margin-right: -51px;
+		margin-left: 16px;
+		float: right;
+	}
+}
+
+@media only screen and (max-width: 590px) {
+	.header h1 {
+		font-size: 30px;
+	}
+
+	.meet {
+		font-size: 10px;
+		height: inherit;
+	}
+}
+
+@media only screen and (max-width: 400px){
+	.header h1 {
+		font-size: 25px;
+	}
+
+	.meet {
+		font-size: 10px;
+		height: inherit;
+		margin-bottom: 10px;
+	}
+
+	.meet .button {
+		height: auto;
+		padding-bottom: 7px;
+	}
+
+	.sign {
+	    background-color: #d3d3d3;
+	    font-weight: bold;
+	    text-align: center;
+	    height: 30px;
+	    line-height: 30px;
+	    width: 390px;
+	    border-radius: 5px;
+	    margin: 0px -23px;
+	}
+}

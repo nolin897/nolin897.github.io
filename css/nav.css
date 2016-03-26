@@ -1,0 +1,134 @@
+header {
+	background-color: white;
+	color: black;
+	font-family: 'Book Antiqua', Palatino, 'Palatino Linotype', 'Palatino LT STD', Georgia, serif;
+	width: 100%;
+	background-attachment: fixed;
+	box-sizing:border-box;
+	padding: 0px; 
+}
+
+header h1 {
+	float: left;
+	/*width: 30%;*/
+	display: inline-block;
+}
+
+
+
+nav.navbar.navbar-inverse.navbar-static-top {
+    display: inline-block;
+    width: 70%;
+    background: white;
+    float: right;
+    border: none;
+    padding: 0px;
+    margin-right: -15px;
+    height: 69px;
+    margin-bottom: 0px;
+}
+
+nav.navbar.navbar-inverse.navbar-static-top div.container {
+	color: black;
+	/*float: right;*/
+	width: inherit;
+	margin: 0px 0px;
+	padding: 0px;
+	border: none;
+    margin-right: 0px;
+    height: 69px;
+    margin-bottom: 0px;
+}
+
+nav.navbar.navbar-inverse.navbar-static-top div.container div.collapse.navbar-collapse {
+	color: black;
+}
+
+nav.navbar.navbar-inverse.navbar-static-top div.container div.collapse.navbar-collapse ul.nav.navbar-nav {
+ 	color: black;
+ 	width: 521.844px;
+ 	border: none;
+    padding: none;
+    margin-right: -15px;
+    height: 69px;
+    margin-bottom: 0px;
+    float: left;
+}
+
+nav.navbar.navbar-inverse.navbar-static-top div.container div.collapse.navbar-collapse ul.nav.navbar-nav li {
+	color: black;
+	height: 69px;
+	position: center;
+	border: none;
+	margin: 10px 10px;
+	line-height: 69px;
+	margin: 0px 5px;
+	padding: 0px;
+	display: inline-block;
+	/*float: right;*/
+}
+
+nav.navbar.navbar-inverse.navbar-static-top div.container div.collapse.navbar-collapse ul.nav.navbar-nav li:hover {
+	background-color: black;
+	color: white;
+}
+
+nav.navbar.navbar-inverse.navbar-static-top div.container div.collapse.navbar-collapse ul.nav.navbar-nav li a {
+	color: black;
+	font-size: 14px;
+	height: 69px;
+	position: center;
+	border: none;
+	margin: 10px 10px;
+	line-height: 69px;
+	margin: 0px 5px;
+	padding: 0px;
+	display: inline-block;	
+}
+
+.navbar-inverse .navbar-nav > li:hover {
+	background: black;
+	color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: black;
+}
+
+nav.navbar.navbar-inverse.navbar-static-top div.container div.collapse.navbar-collapse ul.nav.navbar-nav li a:hover {
+	color: white;
+}
+
+
+
+footer {
+	background-color: white;
+	color: black;
+	font-family: 'Book Antiqua', Palatino, 'Palatino Linotype', 'Palatino LT STD', Georgia, serif;
+	width: 100%;
+	text-align: center;
+	background-attachment: fixed;
+	margin-bottom: 10%;
+}
+
+footer p {
+	margin-top: 10px;
+	font-size: 12px;
+}
+
+footer a img {
+	height: 20px;
+	margin-bottom: 10px;
+}
+
+/*=========================Media Queries=========================*/
+
+@media screen and (min-width: 768px){
+	.navbar-nav {
+    	float: right;
+    	margin: 0;
+	}
+	button.navbar-toggle.collapsed {
+		background-color: black;
+	}
+}

@@ -1,0 +1,271 @@
+@import url(nav.css);
+
+div, section {
+	/*border: 2px solid black;*/
+	background-color: white;
+}
+body {
+	background-image: url(../images/14277740414_6b9947e0c5_k.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	/*background-size: 80%;*/
+	font-family: 'Book Antiqua', Palatino, 'Palatino Linotype', 'Palatino LT STD', Georgia, serif;
+}
+
+.container, .row {
+	background: transparent;
+}
+
+.container {
+	margin-top: 2%;
+	width: 75%;
+	/*margin-bottom: 10%;*/
+}
+
+/*===================Portfolio (Index.html)===============*/
+
+.general_assembly, .nyu, .haverford, .athens, .columbia {
+	float: left;
+	width: 70%;
+}
+
+.date {
+	float: right;
+}
+
+section.epigraph {
+	margin-top: 30px;
+	opacity: 0.8;
+	margin-bottom: 10px;
+}
+
+section.epigraph h2 {
+	font-size: 30px;
+	padding: 20px;
+	text-align: center;
+}
+
+/*section.epigraph h2:hover {
+	display: none;
+}*/
+
+#translation { 
+	display: none;
+}
+
+/*#translation:hover { 
+	display: inline; 
+}
+*/
+section.one {
+	border-top: solid black 1px;
+	border-bottom: solid black 1px;
+	text-align: center;
+	font-size: 30px;
+	padding: 70px;
+	margin-top: 30px;
+}
+
+section.two {
+	background-color: #d3d3d3;
+	color: black;
+	border-bottom: solid white 1px;
+	padding: 60px;
+	text-align: left;
+	font-size: 20px;
+	margin-top: 30px;
+}
+
+section.two h2 {
+	padding-bottom: 15px;
+}
+
+section.three {
+	background-image: url(../images/ethicanicomachea.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: auto;
+	margin-top: 30px;	
+}
+
+section.three p {
+	font-size: 35px;
+	text-decoration: italic;
+	color: white;
+	background: gray;
+	width: 100%;
+	border: 5px solid white;
+	text-align: center;
+}
+
+section.three a {
+	margin: 10px;
+	position: center;
+}
+
+section.three a img {
+	height: 190px;
+	margin: 10px;
+	position: center;
+}
+
+
+
+/*==================About Me (about.html)================*/
+
+section.biography {
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+
+
+section.research_interests {
+
+}
+
+section.research_interests h1 {
+
+}
+
+section.research_interests ul {}
+
+section.research_interests ul li {}
+
+section.research_interests ul li div.row {
+	display: inline-block;
+	margin-bottom: 30px;
+}
+
+section.research_interests ul li div.row p{
+	font-size: 20px;
+	float: left;
+	display: inline-block;
+}
+
+section.research_interests ul li div.row img {
+	max-height: 400px;
+	float: right;
+	display: inline-block;
+}
+
+
+
+/*=============Cirriculum Vitae==============*/
+
+div.date {
+	border: 5px solid black;
+}
+
+section.education, section.experience, section.skills {
+	padding-bottom: 10px;
+	margin-top: 30px;
+	display: inline-block;
+}
+
+.general_assembly, .nyu, .haverford, .athens, .columbia {
+	float: left;
+	border: 5px solid black;
+	/*margin-left: 10px;*/
+	/*width: 75%;*/
+	display: inline-block;
+}
+
+section.education .date {
+	float: right;
+	text-align: center;
+	width: 25%;
+	/*margin-right: 10px;*/
+	display: inline-block;
+}
+
+.general_assembly p, .nyu p, .haverford p, .athens p, .columbia p {
+	margin-bottom: 0px;
+	/*width: 80%;*/
+}
+
+.wiley, .staples, .earth_school, .boonton_podiatry {
+	float: left;
+	border: 5px solid black;
+	/*margin-left: 10px;*/
+	display: inline-block;
+}
+
+section.experience .date {
+	float: right;
+	text-align: center;
+	width: 25%;
+	/*margin-right: 10px;*/
+	display: inline-block;
+}
+
+section.skills {
+	margin-bottom: 30px;
+	background-color: #d3d3d3;
+	color: white;
+	border: solid black 5px;
+}
+
+section.skills li {
+	display: inline-block;
+	font-size: 15px;
+	color: black;
+}
+
+ul.groupImg {
+    list-style-type: none;
+    padding: 0;
+}
+/*======================Media Queries==========================*/
+
+@media only screen and (max-width: 992px){
+	/*++++++Cirriculum Vitae++++++*/
+	section.col-xs-12.col-lg-12.experience div.row div.col-md-8{
+		width: 100%;
+	}
+
+	section.col-xs-12.col-lg-12.experience div.row div.col-md-8 p {
+		text-align: center;
+	}
+	section.col-xs-12.col-lg-12.experience div.col-md-4.date {
+		width: 100%;
+    	text-align: center;
+	}
+}
+
+@media only screen and (max-width: 768px) { 
+	/*FIGURE OUT HOW TO GET TEXT SMALLER AND MAKE IMAGE APPEAR ABOVE OR BELOW THE TEXT WHEN BELOW 768px*/
+
+	/*++++++Portfolio++++++*/
+
+	section.three a {
+		height: 20px;
+		margin: 5px;
+		position: center;
+	}
+
+	section.three a img {
+		height: 20px;
+		margin: 5px;
+		position: center;
+	}
+
+	/*++++++About Me++++++*/
+
+	section.research_interests ul li div.row p{
+		font-size: 8px;
+	}
+
+	section.research_interests ul li div.row img {
+		position: center;
+		display: block;
+	}
+
+	/*++++++Cirriculum Vitae++++++*/
+	
+
+}
+
