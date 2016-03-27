@@ -40,19 +40,20 @@ section.epigraph {
 	margin-bottom: 10px;
 }
 
-section.epigraph h2 {
+section.epigraph h2, section.epigraph #translation {
 	font-size: 30px;
 	padding: 20px;
 	text-align: center;
 }
 
+
 /*section.epigraph h2:hover {
 	display: none;
 }*/
 
-#translation { 
+/*#translation { 
 	display: none;
-}
+}*/
 
 /*#translation:hover { 
 	display: inline; 
@@ -89,7 +90,8 @@ section.three {
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: auto;
-	margin-top: 30px;	
+	margin-top: 30px;
+	padding: 0px 20px 20px 20px;	
 }
 
 section.three p {
@@ -103,14 +105,15 @@ section.three p {
 }
 
 section.three a {
-	margin: 10px;
-	position: center;
+	/*margin: 10px;*/
+	/*position: center;*/
 }
 
 section.three a img {
-	height: 190px;
-	margin: 10px;
-	position: center;
+	/*height: 190px;*/
+	margin-bottom: 20px;
+	/*margin: 10px;*/
+	/*position: center;*/
 }
 
 
@@ -157,7 +160,7 @@ section.research_interests ul li div.row img {
 /*=============Cirriculum Vitae==============*/
 
 div.date {
-	border: 5px solid black;
+	border: 2px solid black;
 }
 
 section.education, section.experience, section.skills {
@@ -168,7 +171,7 @@ section.education, section.experience, section.skills {
 
 .general_assembly, .nyu, .haverford, .athens, .columbia {
 	float: left;
-	border: 5px solid black;
+	border: 2px solid black;
 	/*margin-left: 10px;*/
 	/*width: 75%;*/
 	display: inline-block;
@@ -187,9 +190,17 @@ section.education .date {
 	/*width: 80%;*/
 }
 
+section.education .row, section.experience .row {
+	margin-bottom: 10px;
+}
+
+section.experience {
+	padding-bottom: 0px;
+}
+
 .wiley, .staples, .earth_school, .boonton_podiatry {
 	float: left;
-	border: 5px solid black;
+	border: 2px solid black;
 	/*margin-left: 10px;*/
 	display: inline-block;
 }
@@ -206,7 +217,7 @@ section.skills {
 	margin-bottom: 30px;
 	background-color: #d3d3d3;
 	color: white;
-	border: solid black 5px;
+	border: solid black 2px;
 }
 
 section.skills li {
@@ -223,6 +234,11 @@ ul.groupImg {
 
 @media only screen and (max-width: 992px){
 	/*++++++Cirriculum Vitae++++++*/
+
+	section.education .row, section.experience .row {
+		margin-bottom: 0px;
+	}
+
 	section.col-xs-12.col-lg-12.experience div.row div.col-md-8{
 		width: 100%;
 	}
@@ -241,7 +257,7 @@ ul.groupImg {
 
 	/*++++++Portfolio++++++*/
 
-	section.three a {
+	/*section.three a {
 		height: 20px;
 		margin: 5px;
 		position: center;
@@ -251,7 +267,7 @@ ul.groupImg {
 		height: 20px;
 		margin: 5px;
 		position: center;
-	}
+	}*/
 
 	/*++++++About Me++++++*/
 
