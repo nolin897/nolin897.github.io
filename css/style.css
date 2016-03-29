@@ -60,11 +60,10 @@ section.epigraph h2, section.epigraph #translation {
 }
 */
 section.one {
-	border-top: solid black 1px;
-	border-bottom: solid black 1px;
+	border: 5px double black;
 	text-align: center;
 	font-size: 30px;
-	padding: 70px;
+	padding: 60px;
 	margin-top: 30px;
 }
 
@@ -254,6 +253,10 @@ ul.groupImg {
 
 @media only screen and (max-width: 768px) { 
 	/*FIGURE OUT HOW TO GET TEXT SMALLER AND MAKE IMAGE APPEAR ABOVE OR BELOW THE TEXT WHEN BELOW 768px*/
+
+	body {
+		font-size: 20px;
+	}
 
 	/*++++++Portfolio++++++*/
 
