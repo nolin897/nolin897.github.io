@@ -20,8 +20,11 @@ h1 {
 	font-size: 30px;
 }
 
-div.collapse.navbar-collapse {
+
+div#bs-example-navbar-collapse-1.collapse.navbar-collapse {
 	float: right;
+	height: inherit;
+	margin-bottom: 0px;
 }
 
 div.container-fluid {
@@ -32,7 +35,7 @@ div.container-fluid {
 	background-color: black;
 }
 
-ul {
+nav ul {
 	float: right;
 	background-color: white;
 }
@@ -56,6 +59,8 @@ ul {
 .navbar-inverse .navbar-nav li a {
 	color: black;
 	float: right;
+	height: 63px;
+	line-height: 38px;
 }
 
 .navbar-inverse .navbar-nav li a:hover{
@@ -70,91 +75,6 @@ nav.navbar.navbar-inverse.navbar-static-top {
 	background-color: white;
 	border: none;
 }
-
-/*nav.navbar.navbar-inverse.navbar-static-top {
-    display: inline-block;
-    width: 70%;
-    background: white;
-    float: right;
-    border: none;
-    padding: 0px;
-    margin-right: -15px;
-    height: 69px;
-    margin-bottom: 0px;
-}*/
-
-/*nav.navbar.navbar-inverse.navbar-static-top div.container {
-	color: black;
-	float: right;
-	width: inherit;
-	margin: 0px 0px;
-	padding: 0px;
-	border: none;
-    margin-right: 0px;
-    height: 69px;
-    margin-bottom: 0px;
-}
-
-nav.navbar.navbar-inverse.navbar-static-top div.container div.collapse.navbar-collapse {
-	color: black;
-}*/
-
-/*nav.navbar.navbar-inverse.navbar-static-top div.container div.collapse.navbar-collapse ul.nav.navbar-nav {
- 	color: black;
- 	width: 521.844px;
- 	border: none;
-    padding: none;
-    margin-right: -15px;
-    height: 69px;
-    margin-bottom: 0px;
-    float: left;
-}*/
-
-/*nav.navbar.navbar-inverse.navbar-static-top div.container div.collapse.navbar-collapse ul.nav.navbar-nav li {
-	color: black;
-	height: 69px;
-	position: center;
-	border: none;
-	margin: 10px 10px;
-	line-height: 69px;
-	margin: 0px 5px;
-	padding: 0px;
-	display: inline-block;
-	float: right;
-}*/
-
-/*nav.navbar.navbar-inverse.navbar-static-top div.container div.collapse.navbar-collapse ul.nav.navbar-nav li:hover {
-	background-color: black;
-	color: white;
-}
-
-nav.navbar.navbar-inverse.navbar-static-top div.container div.collapse.navbar-collapse ul.nav.navbar-nav li a {
-	color: black;
-	font-size: 14px;
-	height: 69px;
-	position: center;
-	border: none;
-	margin: 10px 10px;
-	line-height: 69px;
-	margin: 0px 5px;
-	padding: 0px;
-	display: inline-block;	
-}*/
-
-/*.navbar-inverse .navbar-nav > li:hover {
-	background: black;
-	color: white;
-}
-
-.navbar-inverse .navbar-nav > li > a {
-    color: black;
-}
-
-nav.navbar.navbar-inverse.navbar-static-top div.container div.collapse.navbar-collapse ul.nav.navbar-nav li a:hover {
-	color: white;
-}*/
-
-
 
 footer {
 	background-color: white;
@@ -178,7 +98,17 @@ footer a img {
 
 /*=========================Media Queries=========================*/
 
+@media screen and (max-width: 1114px){
+	h1#cv {
+		font-size: 20px;
+	}
+}
+
 @media screen and (max-width: 970px){
+	nav h1 {
+		width: auto;
+	}
+
 	.navbar-inverse .navbar-nav li a{
 		font-size: 12px;
 	}	
@@ -193,32 +123,81 @@ footer a img {
 	}
 }
 
+@media screen and (max-width: 890px){
+	ul#cv_ul li{
+		margin-right: -1px;
+	}
+}
+
+@media screen and (max-width: 885px){
+	nav h1 {
+		font-size: 22px;
+	}
+}
+
 @media screen and (max-width: 855px){
 	nav h1 {
 		font-size: 20px;
+	}
+	nav h1#cv {
+		font-size: 18px;
+		height: auto;
 	}
 	.navbar-inverse .navbar-nav li {
 		font-size: 09px;
 	}
 }
 
-@media screen and (max-width: 768px){
-	/*.navbar-nav {
-    	float: right;
-    	margin: 0;
-	}*/
-	/*button.navbar-toggle.collapsed {
-		background-color: black;
-	}*/
+@media screen and (max-width: 798px){
 	nav h1 {
-		font-size: 20px;
+		font-size: 18px;
+	}
+	.navbar-inverse .navbar-nav li a {
+		/*font-size: 07px;*/
+	}
+}
+
+@media screen and (max-width: 770px){
+	nav h1 {
+		font-size: 17px;
+	}
+	.navbar-inverse .navbar-nav li a {
+		/*font-size: 06px;*/
+	}
+}
+
+@media screen and (max-width: 768px){
+	nav h1 {
+		font-size: 16px;
 	}
 
+}
+
+@media screen and (max-width: 455px){
+	h1#cv {
+		font-size: 16px;
+	}
+
+	button#cv_button.navbar-toggle {
+		margin-right: -10px;
+	}
+
+	ul#cv_ul.nav.navbar-nav {
+		height: auto;
+	}
+
+	ul#cv_ul li a {
+		margin-right: -5px;
+	}
+	button#cv_button.navbar-toggle.collapsed{
+		margin-right: -10px;
 }
 
 @media screen and (max-width: 420px){
+	button.navbar-toggle {
+		margin-right: -10px;
+	}
 	button.navbar-toggle.collapsed{
-		margin-right: -8px;
+		margin-right: -10px;
 	}
 }
-
