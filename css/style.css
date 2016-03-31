@@ -307,8 +307,32 @@ section.skills li {
 }
 
 @media only screen and (max-width: 430px){
+
+	section.biography p {
+		text-align: center;
+	}
+
 	section.research_interests h1 {
 		font-size: 25px;
+		width: 100%;
+		text-align: center;
+		position: center;
 	}
+
+	section.research_interests ul {
+		padding-left: 0px;
+	}
+
+	section.research_interests p{
+		text-align: center;
+		width: 100%;
+	}
+
+	section.research_interests ul li div.row img {
+		float: none;
+		margin: 0px auto;
+		/*display: block;*/
+	}
+
 }
 

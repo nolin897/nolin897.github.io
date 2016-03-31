@@ -25,6 +25,7 @@ div#bs-example-navbar-collapse-1.collapse.navbar-collapse {
 	float: right;
 	height: inherit;
 	margin-bottom: 0px;
+	margin-right: -30px;
 }
 
 div.container-fluid {
@@ -148,21 +149,21 @@ footer a img {
 	}
 }
 
+@media screen and (max-width: 812px){
+	nav h1#cv {
+		font-size: 16px;
+	}
+}
+
 @media screen and (max-width: 798px){
 	nav h1 {
 		font-size: 18px;
-	}
-	.navbar-inverse .navbar-nav li a {
-		/*font-size: 07px;*/
 	}
 }
 
 @media screen and (max-width: 770px){
 	nav h1 {
 		font-size: 17px;
-	}
-	.navbar-inverse .navbar-nav li a {
-		/*font-size: 06px;*/
 	}
 }
 
@@ -171,12 +172,16 @@ footer a img {
 		font-size: 16px;
 	}
 
+	nav h1#cv {
+		font-size: 13px;
+	}
+
 }
 
 @media screen and (max-width: 455px){
-	h1#cv {
+	/*h1#cv {
 		font-size: 16px;
-	}
+	}*/
 
 	button#cv_button.navbar-toggle {
 		margin-right: -10px;
